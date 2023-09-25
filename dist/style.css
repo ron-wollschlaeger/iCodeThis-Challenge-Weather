@@ -589,6 +589,21 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -665,6 +680,10 @@ video {
   max-width: 768px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .origin-bottom-right {
   transform-origin: bottom right;
 }
@@ -708,6 +727,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -742,6 +765,14 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .gap-1 {
@@ -885,6 +916,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .py-2 {
@@ -1171,4 +1206,30 @@ video {
 :is(.dark .dark\:invert-0) {
   --tw-invert: invert(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:flex-none {
+    flex: none;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-none {
+    grid-template-rows: none;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
 }
