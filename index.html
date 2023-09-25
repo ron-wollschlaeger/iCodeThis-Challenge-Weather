@@ -9,7 +9,7 @@
   </head>
 
   <body
-    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-slate-50 dark:from-slate-950 to-emerald-100 dark:to-emerald-900 text-black dark:text-white"
+    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-[#26577C] dark:from-[#152f42] to-white dark:to-gray-600 text-gray-900 dark:text-gray-100"
   >
     <!-- Ron's basic template for iCodeThis challenges -->
     <!-- Background -->
@@ -159,74 +159,254 @@
     </button>
     <!-- Template END -->
 
-    <main class="bg-white z-10">
+    <main class="bg-white dark:bg-gray-800 z-10 w-full max-w-screen-sm">
       <header
-        class="mt-2 bg-slate-200 text-center py-3 flex flex-col justify-center items-center"
+        class="mt-2 mb-8 bg-slate-200 dark:bg-slate-700 text-center py-3 flex flex-col justify-center items-center"
       >
         <span class="text-sm font-light leading-none">Thursday 10:40 PM</span>
         <h1 class="text-2xl font-bold leading-none">Timisoara</h1>
       </header>
 
-      <div class="">
-        <div class="grid grid-cols-2 grid-rows-2">
-          <div class="row-span-2 w-full">
-            <img src="https://plus.unsplash.com/premium_photo-1661963896259-7b183a79005c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" />
+      <div class="px-8 pb-8">
+        <div class="grid grid-cols-2 mb-8">
+          <div class="row-span-2 self-center mx-auto text-yellow-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-moon-stars"
+              width="200"
+              height="200"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+              ></path>
+              <path
+                d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"
+              ></path>
+              <path d="M19 11h2m-1 -1v2"></path>
+            </svg>
           </div>
 
-          <div class="w-full">
-            <div>
-              <span>9</span>
-              <span>°C | °F</span>
-              <span>min 3 °C</span>
+          <div>
+            <div class="flex gap-2 mb-2">
+              <span class="text-9xl font-bold">9</span>
+              <div class="flex flex-col text-5xl gap-1 font-semibold mt-4">
+                <span>°C | °F</span>
+                <span class="text-base uppercase">min 3 °C</span>
+              </div>
             </div>
 
-            <div>
-              <div>
-                <img src="" alt="" />
+            <div class="flex">
+              <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-droplet"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z"
+                  ></path>
+                </svg>
                 <span>93%</span>
               </div>
-              <div>
-                <img src="" alt="" />
+
+              <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-wind"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 8h8.5a2.5 2.5 0 1 0 -2.34 -3.24"></path>
+                  <path d="M3 12h15.5a2.5 2.5 0 1 1 -2.34 3.24"></path>
+                  <path d="M4 16h5.5a2.5 2.5 0 1 1 -2.34 3.24"></path>
+                </svg>
                 <span>5 km/h</span>
               </div>
-              <div>
-                <img src="" alt="" />
+
+              <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-cloud-rain"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7"
+                  ></path>
+                  <path d="M11 13v2m0 3v2m4 -5v2m0 3v2"></path>
+                </svg>
                 <span>0%</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="flex px-4 pb-4 gap-1">
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
+        <div class="flex gap-1">
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
             <span>Fri</span>
-            <img src="" alt="" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cloud"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"
+              ></path>
+            </svg>
             <span>15°/4°</span>
           </div>
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
-            <span>Fri</span>
-            <img src="" alt="" />
-            <span>15°/4°</span>
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+            <span>Sat</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cloud"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M6.657 18c-2.572 0 -4.657 -2.007 -4.657 -4.483c0 -2.475 2.085 -4.482 4.657 -4.482c.393 -1.762 1.794 -3.2 3.675 -3.773c1.88 -.572 3.956 -.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927 -1.551 3.487 -3.465 3.487h-11.878"
+              ></path>
+            </svg>
+            <span>12°/3°</span>
           </div>
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
-            <span>Fri</span>
-            <img src="" alt="" />
-            <span>15°/4°</span>
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+            <span>Sun</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cloud-rain"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7"
+              ></path>
+              <path d="M11 13v2m0 3v2m4 -5v2m0 3v2"></path>
+            </svg>
+            <span>9°/5°</span>
           </div>
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
-            <span>Fri</span>
-            <img src="" alt="" />
-            <span>15°/4°</span>
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+            <span>Mon</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-cloud-storm"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"
+              ></path>
+              <path d="M13 14l-2 4l3 0l-2 4"></path>
+            </svg>
+            <span>11°/6°</span>
           </div>
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
-            <span>Fri</span>
-            <img src="" alt="" />
-            <span>15°/4°</span>
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+            <span>Tue</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-sun"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+              <path
+                d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+              ></path>
+            </svg>
+            <span>16°/5°</span>
           </div>
-          <div class="flex flex-col items-center bg-gray-800/50 p-1">
-            <span>Fri</span>
-            <img src="" alt="" />
-            <span>15°/4°</span>
+          <div class="flex flex-col items-center bg-gray-800/25 dark:bg-gray-200/25 py-2 w-full">
+            <span>Wed</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-sun-wind"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M14.468 10a4 4 0 1 0 -5.466 5.46"></path>
+              <path d="M2 12h1"></path>
+              <path d="M11 3v1"></path>
+              <path d="M11 20v1"></path>
+              <path d="M4.6 5.6l.7 .7"></path>
+              <path d="M17.4 5.6l-.7 .7"></path>
+              <path d="M5.3 17.7l-.7 .7"></path>
+              <path d="M15 13h5a2 2 0 1 0 0 -4"></path>
+              <path
+                d="M12 16h5.714l.253 0a2 2 0 0 1 2.033 2a2 2 0 0 1 -2 2h-.286"
+              ></path>
+            </svg>
+            <span>17°/8°</span>
           </div>
         </div>
       </div>
